@@ -1,5 +1,0 @@
-FROM python:3.7-alpine3.15
-WORKDIR .
-ADD ../convert_data.py ../convert_data.py
-ADD ../data.txt ../data.txt
-ENTRYPOINT ["python", "convert_data.py", "data.txt"]
