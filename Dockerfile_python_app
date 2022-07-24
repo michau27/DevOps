@@ -1,5 +1,5 @@
 FROM python:3.7-alpine3.15
 WORKDIR /home/michal/Pulpit
-ADD /home/michal/Pulpit/Jenkins/workspace/Git_weebhook/convert_data.py .
-ADD /home/michal/Pulpit/Jenkins/workspace/Git_weebhook/data.txt .
+ADD convert_data.py .
+ADD data.txt .
 ENTRYPOINT ["python", "convert_data.py", "data.txt"]
